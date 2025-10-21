@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        
+        }
+        .container{
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            grid-template-rows: minmax(40px auto);
+            gap: 10px;
+            border: 2px solid black;
+            max-width: 330px;
+            border-radius:10px;
+            padding:20px;
+            background-color: black;
+            height: 70vh;
+            color:white;
+            margin: 0 auto;
+        }   
+        .container > div{
+            border-radius: 10px;
+            border: 2px solid white;
+            text-align: center;
+            font-weight: 600;
+            align-content: center;
+    
+
+            
+
+        }
+        .container div:hover{
+            background-color:aquamarine;
+        }
+    
+
+        
+        #box{
+            grid-column:span 5;
+            background-color: white;
+            margin-bottom: 20;
+        }
+        
+        .five{
+            text-align: center;
+            color:white;
+            background-color: orange;
+        }
+        .six{
+            grid-row: span 2;
+            background-color: green;
+        }
+
+            
+
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="box"></div>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>%</div>
+        <div>C</div>
+
+
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>/</div>
+        <div>-</div>
+        
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>x</div>
+        <div class="six">+</div>
+        
+        
+
+        <div>*</div>
+        <div>0</div>
+        <div>#</div>
+        <div class="five">DEL</div>
+        
+        
+
+        
+    </div>
+</body>
+</html>
